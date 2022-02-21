@@ -13,3 +13,5 @@ class CreateBuddies < ActiveRecord::Migration[6.1]
     end
   end
 end
+
+# i'm a comment
