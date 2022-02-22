@@ -5,6 +5,5 @@ Rails.application.routes.draw do
   resources :buddies, only: [:index, :show] do
     resources :bookings
   end
-
-  resources :users, only: [:new, :create, :destroy, :update, :edit]
+  # resources :users, only: [:new, :create, :destroy, :update, :edit]
 end
