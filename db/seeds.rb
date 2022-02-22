@@ -28,10 +28,11 @@ puts "..."
 
 puts "Creating 20 super true buddies..."
 20.times do
-  buddy = Buddy.new(name: Faker::Name.first_name,
+  buddy = Buddy.new(name: ['Antoine', 'Pierre', 'Léa', 'Lizzie', 'Dorothea', 'David', 'Julie', 'Mélanie', 'Jésus',
+                           'Aleksander', 'Helmut', 'Louis', 'Pierre-Emmanuel'].sample,
                     age: rand(18..99),
                     gender: Faker::Gender.type,
-                    city: Faker::Address.city,
+                    city: ['Berlin', 'Hamburg', 'Leipzig', 'Postdam', 'Munich'].sample,
                     biography: Faker::Lorem.sentence(word_count: 50),
                     hobby: [Faker::Hobby.activity, Faker::Hobby.activity],
                     language: ['German', 'French', 'English', 'Chinese', 'Hungarian', 'Greek', 'Russian', 'Angolan',
@@ -43,9 +44,9 @@ puts "Buddies created 👯"
 puts "..."
 
 puts "Creating 5 super true users..."
-User.new(email: 'user1@exemple.com', encrypted_password: 'user1')
-User.new(email: 'user2@exemple.com', encrypted_password: 'user2')
-User.new(email: 'user3@exemple.com', encrypted_password: 'user3')
-User.new(email: 'user4@exemple.com', encrypted_password: 'user4')
-User.new(email: 'user5@exemple.com', encrypted_password: 'user5')
+User.create(email: 'user1@example.com', password: 'user1')
+User.create(email: 'user2@example.com', password: 'user2')
+User.create(email: 'user3@example.com', password: 'user3')
+User.create(email: 'user4@example.com', password: 'user4')
+User.create(email: 'user5@example.com', password: 'user5')
 puts "Users created 💃"
