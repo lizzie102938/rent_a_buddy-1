@@ -43,11 +43,9 @@ puts "Buddies created 👯"
 puts "..."
 
 puts "Creating 5 super true users..."
-user1 = User.new(email: 'user1@exemple.com', encrypted_password: 'user1')
-user2 = User.new(email: 'user2@exemple.com', encrypted_password: 'user2')
-user3 = User.new(email: 'user3@exemple.com', encrypted_password: 'user3')
-user4 = User.new(email: 'user4@exemple.com', encrypted_password: 'user4')
-user5 = User.new(email: 'user5@exemple.com', encrypted_password: 'user5')
+User.new(email: 'user1@exemple.com', encrypted_password: 'user1')
+User.new(email: 'user2@exemple.com', encrypted_password: 'user2')
+User.new(email: 'user3@exemple.com', encrypted_password: 'user3')
+User.new(email: 'user4@exemple.com', encrypted_password: 'user4')
+User.new(email: 'user5@exemple.com', encrypted_password: 'user5')
 puts "Users created 💃"
-
-  # buddy = Buddy.create(name: 'Julie', age: 22, gender: 'binary', city: 'Berlin', language: 'German')
