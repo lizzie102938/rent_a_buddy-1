@@ -1,10 +1,18 @@
-<div>
+<div class="flex-container">
+    <div class="flex-item">
   <h1>Create a new booking</h1>
+      <div class="message_request">
+        <%= simple_form_for [@buddy, @booking] do |f| %>
+          <%= f.input :request_message %>
+          <%= f.input :date %>
+        <% end %>
+      </div>
+    </div>
 
-  <%= simple_form_for [@buddy, @booking] do |f| %>
-    <%= f.input :request_message %>
-    <%= f.input :date %>
-    <%= f.submit %>
-  <% end %>
+  <div class="flex-item">
+    <%= simple_form_for [@buddy, @booking] do |f| %>
+      <%= f.submit %>
+    <% end %>
+  </div>
 
 </div>
