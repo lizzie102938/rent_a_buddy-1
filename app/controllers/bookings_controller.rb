@@ -10,9 +10,6 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.buddy = @buddy
     @booking.user = current_user
-
-    raise
-
     if @booking.save
       redirect_to buddy_path(@buddy)
     else
