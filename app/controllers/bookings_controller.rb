@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+  before_action :set_booking, only: :destroy
   before_action :set_buddy, only: [:new, :create]
 
   def index
@@ -29,6 +30,10 @@ class BookingsController < ApplicationController
 
   def booking_params
     params.require(:booking).permit(:request_message, :date, :buddy_id)
+  end
+
+  def set_booking
+    @booking = Booking.find(params[:id])
   end
 
   def set_buddy
