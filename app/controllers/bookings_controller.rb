@@ -1,6 +1,14 @@
 class BookingsController < ApplicationController
   before_action :set_buddy, only: [:new, :create]
 
+  def index
+    @bookings = Booking.all
+    @user = User.find(params[:user_id])
+  end
+
+  def show
+    @booking = User.find(params[:id])
+  end
 
   def new
     @booking = Booking.new
