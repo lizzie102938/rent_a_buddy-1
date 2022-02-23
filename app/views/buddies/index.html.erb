@@ -1,0 +1,7 @@
+<h1>All buddies</h1>
+
+<ul>
+  <% @buddies.each do |buddy| %>
+    <li><%= link_to buddy.name, buddy_path(buddy) %></li>
+  <% end %>
+</ul>
