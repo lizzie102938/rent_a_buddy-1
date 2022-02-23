@@ -15,13 +15,13 @@ puts "Buddies destroyed ! 😭"
 puts "..."
 
 puts "Destroying the user..."
-Buddy.destroy_all
+User.destroy_all
 puts "Users destroyed ! 😭"
 
 puts "..."
 
 puts "Destroying the bookings..."
-Buddy.destroy_all
+Booking.destroy_all
 puts "Bookings destroyed ! 😭"
 
 puts "..."
