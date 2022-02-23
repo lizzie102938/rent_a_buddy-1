@@ -6,4 +6,5 @@
 <p><%= @buddy.biography %></p>
 <p><%= @buddy.hobby %></p>
 <%# redirect to for the next step %>
-<%= link_to "Book this buddy", new_buddy_booking_path(@buddy)%>
+<%#= link_to "Book this buddy", new_buddy_booking_path(@buddy)%>
+<button type="button" class="btn btn-primary btn-lg"><%= link_to "Book this buddy", new_buddy_booking_path(@buddy)%></button>
