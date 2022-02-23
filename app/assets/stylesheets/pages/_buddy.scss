@@ -1,8 +1,10 @@
 .flex-container {
   display: flex;
+  justify-content: space-between;
 }
 
-.flex-container {
+
+.flex-item {
   display: flex;
   justify-content: center;
 }
