@@ -1,10 +1,20 @@
-<h2><%= @buddy.name %></h2>
-<%# add picture %>
-<p><%= @buddy.age %></p>
-<p><%= @buddy.gender %></p>
-<p><%= @buddy.city %></p>
-<p><%= @buddy.biography %></p>
-<p><%= @buddy.hobby %></p>
-<%# redirect to for the next step %>
-<%#= link_to "Book this buddy", new_buddy_booking_path(@buddy)%>
-<button type="button" class="btn btn-primary btn-lg"><%= link_to "Book this buddy", new_buddy_booking_path(@buddy)%></button>
+<div class="container">
+  <div class="flex-container">
+    <div class="flex-item">
+      <div class="profil-display">
+        <h2><%= @buddy.name %></h2>
+        <p>I'm <%= @buddy.age %> years old.</p>
+        <p>I identify myself as <%= @buddy.gender %></p>
+        <p>I'm leaving in <%= @buddy.city %></p>
+        <p>A bit about myself: </p>
+        <p><%= @buddy.biography %></p>
+        <p>I enjoy the <%= @buddy.hobby %></p>
+      </div>
+    </div>
+    <div class="flex-item">
+      <%# add picture %>
+      <%# redirect to for the next step %>
+      <button type="button" class="btn btn-primary btn-lg"><%= link_to "Book this buddy", new_buddy_booking_path(@buddy)%></button>
+    </div>
+  </div>
+</div>

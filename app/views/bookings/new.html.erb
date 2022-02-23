@@ -1,0 +1,10 @@
+<div>
+  <h1>Create a new booking</h1>
+
+  <%= simple_form_for [@buddy, @booking] do |f| %>
+    <%= f.input :request_message %>
+    <%= f.input :date %>
+    <%= f.submit %>
+  <% end %>
+
+</div>
