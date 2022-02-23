@@ -6,5 +6,13 @@
 
 .flex-item {
   display: flex;
-  justify-content: center;
+}
+
+.profil-display {
+  background-color: $gray-blue;
+  padding: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $orange;
 }
