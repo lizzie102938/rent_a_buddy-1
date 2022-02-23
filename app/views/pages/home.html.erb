@@ -1,26 +1,35 @@
-  <header>
-    <navbar>
-      <ul>
-        <div class="logo">
-          <li><a href="#">Rent a Buddy</li>
+<div class="navbar-menu">
+  <div class="logo-and-menu">
+    <h1  class="logo-font"> Rent a buddy </h1>
+    <div class="right-side-menu">
+      <p> Become a buddy <p>
+      <div class="lang-circle">
+      </div>
+      <div class="menu-and-profile-icon">
+        <div class="menu-line-box">
+          <div class="menu-line">
+          </div>
+          <div class="menu-line">
+          </div>
+          <div class="menu-line">
+          </div>
         </div>
-        <div class="links">
-        <li><a href="#">Recommended friends</li>
-        <li><a href="#">Experiences</li>
-        <li><a href="#">Suggested activities</li>
-      </ul>
-    </navbar>
-    <div class="searchbar">
-      <ul>
-        <li>Location</li>
-        <li>Check in</li>
-        <li>Check out</li>
-      </ul>
+        <div class="profile-icon">
+        </div>
+      </div>
     </div>
-  </header>
-  <footer>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-  </footer>
+  </div>
+  <ul>
+    <li><%= link_to "Browse all buddies", buddies_path %></li>
+    <li class="link-list"><a href="#">Experiences</a></li>
+    <li class="link-list"><a href="#">Suggested activities</a></li>
+  </ul>
+  <div class="buddy-search">
+    <div class="location-text">
+      <p>Location</p>
+    </div>
+    <div>
+      <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
+    </div>
+  </div>
+</div>
