@@ -1,4 +1,39 @@
-.card {
+.buddy-card {
   background-color: #D4D7E5;
   color: #003354;
+  border: 5px solid #F26101;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #003354;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-img {
+  width: 130px;
+  border-radius: 50%;
+  border: 5px solid #F26101;
+  margin: 10% 0 10% 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.scroll {
+  max-height: 180px;
+  overflow: scroll;
+}
+
+.card-title {
+  font-weight: bold;
 }

@@ -1,16 +1,16 @@
 <h1>All buddies</h1>
 
-<ul>
+<div class="grid">
   <% @buddies.each do |buddy| %>
-    <li><%= link_to buddy.name, buddy_path(buddy) %></li>
+    <div class="buddy-card">
+      <img class="card-img" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY3MDUxMjkzMjI1OTIwMTcz/brad-pitt-attends-the-premiere-of-20th-century-foxs--square.jpg" alt="Buddy card">
+      <div class="card-body">
+        <h5 class="card-title"><%= link_to buddy.name, buddy_path(buddy) %></h5>
+        <div class="scroll">
+          <p class="card-text"><%= buddy.biography %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
-</ul>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Buddy image">
-  <div class="card-body">
-    <h5 class="card-title">Buddy name</h5>
-    <p class="card-text">Biography</p>
-    <a href="#" class="btn btn-primary">See more</a>
-  </div>
+</div>
 </div>
