@@ -1,14 +1,26 @@
- <ul class="ul-navbar">
-  <li><%= link_to "Browse all buddies", buddies_path %></li>
-  <li class="link-list"><a href="#">Experiences</a></li>
-  <li class="link-list"><a href="#">Suggested activities</a></li>
-</ul>
-
-<h1>Dashboard</h1>
-<p>Welome <%= current_user.username %>! These are your bookings:</p>
-<%# @booking.each do |booking| %>
+<div class="buddy-search-app">
+  <form class="location-text">
+    <input class="location-text" type="text" placeholder="Location">
+  </form>
   <div>
-    <%#= booking.request_message%>
+    <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
   </div>
+</div>
 
-<%# end %>
+<h1>Welcome <%= current_user.username %>!</h1>
+<h4> These are your bookings:</h4>
+<% @bookings.each do |booking| %>
+  <div class="confirmation-container">
+    <div class="confirmation-photo"><%= image_tag booking.buddy.photo %></div>
+    <div class="confirmation-buddy"><%= booking.buddy.name %></div>
+    <div class="confirmation-date">
+      <p><%= booking.starts_at.strftime("from %B %d %Y")%></p>
+      <p>to</p>
+      <p><%= booking.ends_at.strftime("to %B %d %Y")%></p>
+    </div>
+    <div class="message-scroll">
+      <div class="confirmation-message"><%= booking.request_message%></div>
+    </div>
+    <div class="confirmation-action"><%= link_to 'Cancel', booking_path(booking), method: :delete, class: "btn btn-cancel", data: { confirm: "Are you sure you want to delete this booking?" } %></div>
+  </div>
+<% end %>
