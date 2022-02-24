@@ -36,7 +36,9 @@ puts "Creating 20 super true buddies..."
                     biography: Faker::Lorem.sentence(word_count: 50),
                     hobby: [Faker::Hobby.activity, Faker::Hobby.activity],
                     language: ['German', 'French', 'English', 'Chinese', 'Hungarian', 'Greek', 'Russian', 'Angolan',
-                               'Ethiopian', 'Arabic'].sample(2))
+                               'Ethiopian', 'Arabic'].sample(2),
+                    price: rand(50..100),
+                    photo: )
   buddy.save!
 end
 puts "Buddies created 👯"
@@ -44,9 +46,9 @@ puts "Buddies created 👯"
 puts "..."
 
 puts "Creating 5 super true users..."
-User.create(email: 'user1@example.com', password: 'user1')
-User.create(email: 'user2@example.com', password: 'user2')
-User.create(email: 'user3@example.com', password: 'user3')
-User.create(email: 'user4@example.com', password: 'user4')
-User.create(email: 'user5@example.com', password: 'user5')
+User.create(email: 'user1@example.com', password: 'user11', username: 'Lizzie')
+User.create(email: 'user2@example.com', password: 'user22', username: 'James')
+User.create(email: 'user3@example.com', password: 'user33', username: 'Aleks')
+User.create(email: 'user4@example.com', password: 'user44', username: 'Thea')
+User.create(email: 'user5@example.com', password: 'user55', username: 'David')
 puts "Users created 💃"
