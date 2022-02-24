@@ -1,12 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+navbar ul {
+  list-style: none;
+}
+
+.navbar-menu {
+  background-color: #003354;
+  color: #ffffff;
+  width: 100%;
+  height: 200px;
+}
+
+.right-side-menu {
+  display: inline-flex;
+}
+
+.lang-circle {
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.menu-and-profile-icon {
+  background-color: white;
+  height: 28px;
+  width: 46px;
+  border-radius: 35%;
+  display: flex
+}
+
+.menu-line-box {
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.menu-line {
+  border-bottom: 3px solid #F26101;
+  width: 15px;
+  margin-top: 2px;
+}
+
+.profile-icon {
+  background-color: #F26101;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-top: 5px;
+}
+
+ul a{
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  padding: 0 0 15px 0;
+  margin: 0 0 0 35%;
+}
+
+
+.logo-and-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.buddy-search {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 50px;
+  height: 35px;
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin-left: 40%;
+  padding: 0 30px;
+  box-shadow: 2px 2px #F26101;
+}
+
+.search-icon {
+  border: 3px solid #F26101;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: #F26101;
+  text-shadow: 2px 2px #00000081;
+}
+
+.logo-font {
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px #F26101;
+}
+
+.logo-font a{
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  border-bottom: 2px solid #F26101;
+  color:white;
+  transition: 0.1s;
+  border-radius: 10%;
+}
+
+.location-text {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #D4D7E5;
 }
