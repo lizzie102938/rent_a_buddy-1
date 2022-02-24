@@ -10,11 +10,10 @@
 <h4> These are your bookings:</h4>
 <% @bookings.each do |booking| %>
   <div class="confirmation-container">
-    <div class="confirmation-photo"><%= image_tag booking.buddy.photo %></div>
+    <div class="confirmation-photo"><%= image_tag booking.buddy.photo, class: "image" %></div>
     <div class="confirmation-buddy"><%= booking.buddy.name %></div>
     <div class="confirmation-date">
       <p><%= booking.starts_at.strftime("from %B %d %Y")%></p>
-      <p>to</p>
       <p><%= booking.ends_at.strftime("to %B %d %Y")%></p>
     </div>
     <div class="message-scroll">
