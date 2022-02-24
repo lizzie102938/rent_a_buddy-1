@@ -33,7 +33,7 @@ count = 0
                            'Aleksander', 'Helmut', 'Louis', 'Pierre-Emmanuel'][count],
                     age: rand(18..99),
                     gender: Faker::Gender.type,
-                    city: ['Berlin', 'Hamburg', 'Leipzig', 'Postdam', 'Munich'].sample,
+                    city: ['Berlin', 'Hamburg', 'Leipzig', 'Potsdam', 'Munich'].sample,
                     biography: ["I'm a kitchen assistant who enjoys eating out, badminton and playing card games.
                                 I am kind and considerate, but can also be very dull and a bit untrustworthy.
                                 I started studying food science at college but never finished the course. I am allergic
@@ -101,7 +101,7 @@ count = 0
                                 "I am a health centre receptionist who enjoy travelling, going to the movies and adult
                                 colouring books. I am exciting and generous, but can also be very rude and a bit
                                 untrustworthy."][count],
-                    hobby: [Faker::Hobby.activity, Faker::Hobby.activity],
+                    hobby: [Faker::Hobby.activity, Faker::Hobby.activity].join(", "),
                     language: ['German', 'French', 'English', 'Chinese', 'Hungarian', 'Greek', 'Russian', 'Angolan',
                                'Ethiopian', 'Arabic'].sample(2),
                     price_hour: rand(30..100),
