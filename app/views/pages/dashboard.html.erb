@@ -1,8 +1,17 @@
- <ul class="ul-navbar">
-  <li><%= link_to "Browse all buddies", buddies_path %></li>
-  <li class="link-list"><a href="#">Experiences</a></li>
-  <li class="link-list"><a href="#">Suggested activities</a></li>
-</ul>
+<div class="buddy-search-app">
+  <form class="location-text">
+    <input class="location-text" type="text" placeholder="Location">
+  </form>
+  <div>
+    <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
+  </div>
+</div>
+
+<h1>Dashboard</h1>
+<p>Welome <%= current_user.username %>! These are your bookings:</p>
+<%# @booking.each do |booking| %>
+  <div>
+    <%#= booking.request_message%>
 <h1>Welcome <%= current_user.username %>!</h1>
 <h4> These are your bookings:</h4>
 <%# @bookings.each do |booking| %>
