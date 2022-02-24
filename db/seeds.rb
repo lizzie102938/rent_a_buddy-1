@@ -44,6 +44,7 @@ puts "Buddies created 👯"
 puts "..."
 
 puts "Creating 5 super true users..."
+<<<<<<< HEAD
 User.create!(email: 'user1@example.com', password: 'user1!', username: 'Thea')
 User.create!(email: 'user2@example.com', password: 'user2!')
 User.create!(email: 'user3@example.com', password: 'user3!')
@@ -60,3 +61,11 @@ puts "Creating 13 super true bookings..."
   booking.save!
 end
 puts "Booking created created 👯"
+=======
+User.create(email: 'user1@example.com', password: 'user1')
+User.create(email: 'user2@example.com', password: 'user2')
+User.create(email: 'user3@example.com', password: 'user3')
+User.create(email: 'user4@example.com', password: 'user4')
+User.create(email: 'user5@example.com', password: 'user5')
+puts "Users created 💃"
+>>>>>>> main
