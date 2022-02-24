@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-body {
-  font-family: 'Varela Round', sans-serif;
-}
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -31,7 +29,12 @@ navbar ul {
   background-color: #003354;
   color: #ffffff;
   width: 100%;
-  height: 200px;
+  height: 250px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index:999;
 }
 
 .right-side-menu {
@@ -123,8 +126,12 @@ ul {
 }
 
 .logo-font {
-  font-family: 'Permanent Marker', cursive;
-  text-shadow: 2px 2px #F26101;
+  font-family: 'Lobster', cursive;
+  text-shadow: 1px 1px #F26101;
+  border-bottom: 2px inset #F26101;
+  border-width: 5px;
+  padding: 10px;
+  border-bottom-left-radius: 30%;
 }
 
 .logo-font a{
@@ -144,3 +151,13 @@ ul li a:hover {
   text-decoration: none;
   color: #D4D7E5;
 }
+
+body, html {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin:0;
+  }
