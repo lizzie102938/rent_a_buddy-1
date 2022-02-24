@@ -6,9 +6,5 @@ Rails.application.routes.draw do
     resources :bookings
   end
   # resources :users, only: [:new, :create, :destroy, :update, :edit]
-<<<<<<< HEAD
-
   get "dashboard", to: 'pages#dashboard'
-=======
->>>>>>> main
 end
