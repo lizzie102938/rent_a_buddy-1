@@ -20,16 +20,21 @@ class BookingsController < ApplicationController
     @booking.buddy = @buddy
     @booking.user = current_user
     if @booking.save
-      redirect_to buddy_path(@buddy)
+      redirect_to dashboard_path
     else
       render :new
     end
   end
 
+  def destroy
+    @booking.destroy
+    redirect_to dashboard_path
+  end
+
   private
 
   def booking_params
-    params.require(:booking).permit(:request_message, :date, :buddy_id)
+    params.require(:booking).permit(:request_message, :starts_at, :ends_at, :buddy_id)
   end
 
   def set_booking
