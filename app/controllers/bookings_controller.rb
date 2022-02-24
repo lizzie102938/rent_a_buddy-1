@@ -20,10 +20,15 @@ class BookingsController < ApplicationController
     @booking.buddy = @buddy
     @booking.user = current_user
     if @booking.save
-      redirect_to buddy_path(@buddy)
+      redirect_to dashboard_path
     else
       render :new
     end
+  end
+
+  def destroy
+    @booking.destroy
+    redirect_to dashboard_path
   end
 
   private
