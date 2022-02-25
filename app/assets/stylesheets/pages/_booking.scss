@@ -11,11 +11,15 @@
   background-color: $gray-blue;
   padding: 20px;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: $orange;
+  border: 3px solid $orange;
+  width: 1000px;
+  box-shadow: 2px 2px 7px $lighter-blue;
+  margin-right: 28px;
 }
 
-#new_booking outside_form {
-  align-self: flex-end;
+.button_position {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }

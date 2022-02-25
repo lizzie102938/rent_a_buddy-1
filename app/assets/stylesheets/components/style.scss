@@ -1,5 +1,8 @@
 
-body {
+
+html, body {
+  position: relative;
+  background-color: white;
   margin: 0;
   height: 100vh;
 }
@@ -7,6 +10,7 @@ body {
 .site-container {
   margin: 0 auto;
   width: 80vw;
+  height: 100vh;
   padding-top: 120px;
   margin-bottom: 150px;
   height: 100%;
@@ -85,4 +89,6 @@ body {
 
 .site-container-body {
   background-color: #003354;
+  padding-bottom: 150px;
+  overflow: auto;
 }

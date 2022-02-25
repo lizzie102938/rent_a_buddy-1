@@ -18,8 +18,8 @@
         <div class="logo-and-menu-app">
           <h1  class="logo-font logo-font-app"><a href="/"> Rent a buddy </a> </h1>
           <div class="buddy-search-app">
-            <form class="location-text">
-              <input class="location-text" type="text" placeholder="Location">
+            <form action="<%= buddies_path %>" class="location-text">
+              <input name="search" class="location-text" type="text" placeholder="Location or hobby">
             </form>
             <div>
               <button class="search-button"><i class="search-icon fa fa-search"></i></button>
@@ -38,16 +38,17 @@
         </div>
       </div>
 
+
       <% if action_name === "home" %>
-      <body class= site-container-body>
+      <div class= site-container-body>
       <div class="site-container-home">
       <% else %>
       <div class="site-container">
       <% end %>
         <%= yield %>
       </div>
-      </body>
-
+      </div>
+      </div>
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
