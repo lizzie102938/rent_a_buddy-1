@@ -1,11 +1,16 @@
 <div class="buddy-search-app">
   <form action="<%= buddies_path %>" class="location-text">
-    <input name="search" class="location-text" type="text" placeholder="Location">
+    <input name="search" class="location-text" type="text" placeholder="Location or hobby">
   </form>
   <div>
     <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
   </div>
 </div>
+<% if params[:search].present? %>
+  <h2>Your result for <%= params[:search] %></h2>
+<% else %>
+  <h2>All the buddies</h2>
+<% end %>
 
 <div class="grid">
   <% @buddies.each do |buddy| %>
