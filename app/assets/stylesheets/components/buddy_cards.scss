@@ -1,6 +1,11 @@
+h2 {
+  color: $dark-blue;
+  margin-bottom: 20px;
+}
+
 .buddy-card {
   background-color: #D4D7E5;
-  color: #003354;
+  color: $dark-blue;
   border: 3px solid #F26101;
   border-radius: 20px;
   display: flex;
