@@ -14,9 +14,6 @@
   </head>
 
   <body>
-      <div class="site-container">
-      <%= yield %>
-      </div>
       <div class="navbar-menu-application">
         <div class="logo-and-menu logo-and-menu-app">
           <h1  class="logo-font logo-font-app"><a href="/"> Rent a buddy </a> </h1>
@@ -39,6 +36,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="site-container">
+        <%= yield %>
       </div>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>

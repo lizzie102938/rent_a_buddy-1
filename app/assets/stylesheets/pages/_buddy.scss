@@ -15,4 +15,22 @@
   border-style: solid;
   border-width: 2px;
   border-color: $orange;
+  width: 1000px;
+  // margin-right: 20px;
+}
+
+.img-circle {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid $orange;
+  background-size: cover;
+}
+
+.image_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
