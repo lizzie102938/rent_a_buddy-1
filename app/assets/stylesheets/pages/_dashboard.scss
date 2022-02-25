@@ -13,21 +13,29 @@
   margin-bottom: 30px;
 }
 
-.confirmation-photo {
-  width: 130px;
+h4 {
+  margin-top: 20px;
+}
+
+.bookings {
+  margin-top: 50px;
+}
+
+.image {
+  height:120px;
+  width: 120px;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid #F26101;
-  margin: 15px;
 }
 
 .confirmation-buddy {
-  width: 100px;
-  // border: 1px solid black;
+  width: 50px;
 }
 
 .confirmation-date {
-  width: 100px;
-  // border: 1px solid black;
+  width: 250px;
+  text-align: center;
 }
 
 .message-scroll {
@@ -38,10 +46,16 @@
 
 .confirmation-message {
   width: 600px;
-  // border: 1px solid black;
 }
 
 .confirmation-action {
-  width: 100px;
-  // border: 1px solid black;
+  width: 50px;
+}
+
+.fa-trash {
+  color: $dark-blue;
+
+  &:hover {
+    color: $white;
+  }
 }
