@@ -6,17 +6,15 @@
     <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
   </div>
 </div>
-  <h1>Create a new booking</h1>
-</div>
-<div class="flex-container">
-    <div class="flex-item">
-      <div class="message_request">
-        <%= simple_form_for [@buddy, @booking] do |f| %>
-          <%= f.input :request_message %>
-          <%= f.input :starts_at %>
-          <%= f.input :ends_at %>
-          <%= f.submit class:"btn btn-primary btn-lg outside_form" %>
-        <% end %>
-      </div>
+<div>
+  <%= simple_form_for [@buddy, @booking], html: { class: "d-flex justify-content-between"} do |f| %>
+    <div class="message_request">
+      <%= f.input :request_message %>
+      <%= f.input :starts_at %>
+      <%= f.input :ends_at %>
     </div>
+    <div class='button_position'>
+      <%= f.submit class:"btn btn-primary btn-lg" %>
+    </div>
+  <% end %>
 </div>
