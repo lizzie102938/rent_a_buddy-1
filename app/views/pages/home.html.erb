@@ -1,4 +1,36 @@
-<h1>Welcome to Rent-A-Buddy!</h1>
-<p>The platform where you can rent a pal for any occasion!</p>
+<div class="navbar-menu">
+  <div class="logo-and-menu">
+    <h1  class="logo-font"> Rent a buddy </h1>
+    <div class="right-side-menu">
+      <p> Become a buddy <p>
+      <div class="lang-circle">
+      </div>
+      <div class="menu-and-profile-icon">
+        <div class="menu-line-box">
+          <div class="menu-line">
+          </div>
+          <div class="menu-line">
+          </div>
+          <div class="menu-line">
+          </div>
+        </div>
+        <div class="profile-icon">
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="ul-banner">
+    <li><%= link_to "Browse all buddies", buddies_path %></li>
+    <li class="link-list"><a href="#">Experiences</a></li>
+    <li class="link-list"><a href="#">Suggested activities</a></li>
+  </ul>
+<div class="buddy-search">
+  <form class="location-text">
+    <input class="location-text" type="text" placeholder="Location">
+  </form>
+  <div>
+    <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
+  </div>
+</div>
 
-<p><%= link_to "Browse all buddies", buddies_path %><p>
+</div>

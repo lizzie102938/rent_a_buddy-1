@@ -1,7 +1,25 @@
-<h1>All buddies</h1>
+<div class="buddy-search-app">
+  <form class="location-text">
+    <input class="location-text" type="text" placeholder="Location">
+  </form>
+  <div>
+    <i class="search-icon fa fa-search" style="font-size:16px;color:white"></i>
+  </div>
+</div>
 
-<ul>
+<div class="grid">
   <% @buddies.each do |buddy| %>
-    <li><%= link_to buddy.name, buddy_path(buddy) %></li>
+    <%= link_to buddy_path(buddy) do %>
+      <div class="buddy-card">
+        <div>
+        <img class="card-img" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY3MDUxMjkzMjI1OTIwMTcz/brad-pitt-attends-the-premiere-of-20th-century-foxs--square.jpg" alt="Buddy card">
+        <h5 class="price">€<%= buddy.price_hour %></h5>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= buddy.name %></h5>
+          <p class="card-text"><%= buddy.hobby %></p>
+        </div>
+      </div>
+    <% end %>
   <% end %>
-</ul>
+</div>

@@ -1,0 +1,42 @@
+.buddy-card {
+  background-color: #D4D7E5;
+  color: #003354;
+  border: 3px solid #F26101;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.buddy-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+a {
+  text-decoration: none;
+  color: #003354;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-img {
+  width: 130px;
+  border-radius: 50%;
+  border: 4px solid #F26101;
+  margin: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.price {
+  text-align: center;
+}

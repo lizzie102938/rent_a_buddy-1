@@ -10,28 +10,54 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-    <%= yield %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <div id="footer">
-      <div class="footer-content">
-        <div class="info">
-          <p>Contact us</p>
-          <p>About</p>
-        </div>
-        <div class="social-media">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-youtube"></i>
-          <i class="fab fa-github"></i>
+      <div class="site-container">
+      <%= yield %>
+      </div>
+      <div class="navbar-menu-application">
+        <div class="logo-and-menu logo-and-menu-app">
+          <h1  class="logo-font logo-font-app"><a href="/"> Rent a buddy </a> </h1>
+          <div class="right-side-menu">
+            <p> Become a buddy <p>
+            <div class="lang-circle">
+            <p>EN</p>
+            </div>
+            <div class="menu-and-profile-icon">
+              <div class="menu-line-box">
+                <div class="menu-line">
+                </div>
+                <div class="menu-line">
+                </div>
+                <div class="menu-line">
+                </div>
+              </div>
+              <div class="profile-icon">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <div id="footer">
+        <div class="footer-content">
+          <div class="info">
+            <p>Contact us</p>
+            <p>About</p>
+          </div>
+          <div class="social-media">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+      </div>
   </body>
 </html>

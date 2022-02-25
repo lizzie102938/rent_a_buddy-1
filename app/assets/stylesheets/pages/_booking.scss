@@ -1,0 +1,21 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  display: flex;
+}
+
+.message_request {
+  background-color: $gray-blue;
+  padding: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $orange;
+}
+
+#new_booking outside_form {
+  align-self: flex-end;
+}

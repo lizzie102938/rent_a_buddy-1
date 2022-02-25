@@ -1,0 +1,68 @@
+[1mdiff --git a/app/assets/stylesheets/components/_navbar.scss b/app/assets/stylesheets/components/_navbar.scss[m
+[1mindex 2d2dc90..eee815a 100644[m
+[1m--- a/app/assets/stylesheets/components/_navbar.scss[m
+[1m+++ b/app/assets/stylesheets/components/_navbar.scss[m
+[36m@@ -144,7 +144,3 @@[m [mul li a:hover {[m
+   text-decoration: none;[m
+   color: #D4D7E5;[m
+ }[m
+[31m-[m
+[31m-.navbar-menu {[m
+[31m-  width: 100%;[m
+[31m-}[m
+[1mdiff --git a/app/assets/stylesheets/components/style.scss b/app/assets/stylesheets/components/style.scss[m
+[1mindex d2c714d..3b889a7 100644[m
+[1m--- a/app/assets/stylesheets/components/style.scss[m
+[1m+++ b/app/assets/stylesheets/components/style.scss[m
+[36m@@ -1,5 +1,5 @@[m
+ [m
+ body {[m
+   background-color: white;[m
+[31m-  margin: 0px 130px;[m
+[32m+[m[32m  // margin: 0px 130px;[m
+ }[m
+[1mdiff --git a/app/views/layouts/application.html.erb b/app/views/layouts/application.html.erb[m
+[1mindex 6ef2639..38b0f35 100644[m
+[1m--- a/app/views/layouts/application.html.erb[m
+[1m+++ b/app/views/layouts/application.html.erb[m
+[36m@@ -15,23 +15,24 @@[m
+ [m
+   <body>[m
+     <div class="container">[m
+[31m-    <%= yield %>[m
+[31m-    <p class="notice"><%= notice %></p>[m
+[31m-    <p class="alert"><%= alert %></p>[m
+[32m+[m[32m      <%= yield %>[m
+[32m+[m[32m      <p class="notice"><%= notice %></p>[m
+[32m+[m[32m      <p class="alert"><%= alert %></p>[m
+ [m
+[31m-    <div id="footer">[m
+[31m-      <div class="footer-content">[m
+[31m-        <div class="info">[m
+[31m-          <p>Contact us</p>[m
+[31m-          <p>About</p>[m
+[31m-        </div>[m
+[31m-        <div class="social-media">[m
+[31m-          <i class="fab fa-facebook-f"></i>[m
+[31m-          <i class="fab fa-twitter"></i>[m
+[31m-          <i class="fab fa-instagram"></i>[m
+[31m-          <i class="fab fa-linkedin-in"></i>[m
+[31m-          <i class="fab fa-youtube"></i>[m
+[31m-          <i class="fab fa-github"></i>[m
+[32m+[m[32m      <div id="footer">[m
+[32m+[m[32m        <div class="footer-content">[m
+[32m+[m[32m          <div class="info">[m
+[32m+[m[32m            <p>Contact us</p>[m
+[32m+[m[32m            <p>About</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="social-media">[m
+[32m+[m[32m            <i class="fab fa-facebook-f"></i>[m
+[32m+[m[32m            <i class="fab fa-twitter"></i>[m
+[32m+[m[32m            <i class="fab fa-instagram"></i>[m
+[32m+[m[32m            <i class="fab fa-linkedin-in"></i>[m
+[32m+[m[32m            <i class="fab fa-youtube"></i>[m
+[32m+[m[32m            <i class="fab fa-github"></i>[m
+[32m+[m[32m          </div>[m
+         </div>[m
+       </div>[m
+     </div>[m

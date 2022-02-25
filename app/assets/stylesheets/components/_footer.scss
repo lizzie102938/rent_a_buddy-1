@@ -1,9 +1,8 @@
 #footer {
-  position:absolute;
   bottom:0;
   width:100%;
   height:80px;
-  background:#003354;
+  background: $dark-blue;
 }
 
 .footer-content {
@@ -16,8 +15,13 @@
 }
 
 #footer p {
+<<<<<<< HEAD
   color: white;
   padding-right: 10px;
+=======
+  color: $white;
+  padding: 10px;
+>>>>>>> main
   margin-bottom: 0;
 }
 

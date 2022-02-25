@@ -1,0 +1,61 @@
+.confirmation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D4D7E5;
+  color: #003354;
+  border: 5px solid #F26101;
+  border-radius: 20px;
+  width: 100%;
+  height: 180px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+.bookings {
+  margin-top: 50px;
+}
+
+.image {
+  height:120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #F26101;
+}
+
+.confirmation-buddy {
+  width: 50px;
+}
+
+.confirmation-date {
+  width: 250px;
+  text-align: center;
+}
+
+.message-scroll {
+  max-height: 160px;
+  overflow: scroll;
+  padding: 5px 0;
+}
+
+.confirmation-message {
+  width: 600px;
+}
+
+.confirmation-action {
+  width: 50px;
+}
+
+.fa-trash {
+  color: $dark-blue;
+
+  &:hover {
+    color: $white;
+  }
+}

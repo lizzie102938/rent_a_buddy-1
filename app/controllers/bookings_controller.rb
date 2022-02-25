@@ -4,7 +4,7 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.all
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
   end
 
   def show
@@ -17,27 +17,24 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @booking.buddy = @booking
-    flash[:notice] = @booking.errors.full_messages.to_sentence unless @booking.save
-    redirect_to buddy_path(@buddy)
-  end
-
-  def edit
-    @booking = Booking
-  end
-
-  def update
+    @booking.buddy = @buddy
+    @booking.user = current_user
+    if @booking.save
+      redirect_to dashboard_path
+    else
+      render :new
+    end
   end
 
   def destroy
     @booking.destroy
-    redirect_to list_path(@booking.list)
+    redirect_to dashboard_path
   end
 
   private
 
   def booking_params
-    params.require(:booking).permit(:request_message, :date, :buddy_id)
+    params.require(:booking).permit(:request_message, :starts_at, :ends_at, :buddy_id)
   end
 
   def set_booking
