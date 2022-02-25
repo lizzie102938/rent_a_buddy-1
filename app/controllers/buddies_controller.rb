@@ -1,6 +1,10 @@
 class BuddiesController < ApplicationController
   def index
-    @buddies = Buddy.all
+    if params[:search].present?
+      @buddies = Buddy.search_by_city_and_hobby(params[:search])
+    else
+      @buddies = Buddy.all
+    end
   end
 
   def show
