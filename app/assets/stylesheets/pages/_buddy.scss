@@ -13,10 +13,10 @@
   padding: 20px;
   border-radius: 5px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
   border-color: $orange;
   width: 1000px;
-  // margin-right: 20px;
+  box-shadow: 2px 2px 7px $lighter-blue;
 }
 
 .img-circle {
@@ -25,6 +25,7 @@
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid $orange;
+  box-shadow: 2px 2px 7px $lighter-blue;
   background-size: cover;
 }
 

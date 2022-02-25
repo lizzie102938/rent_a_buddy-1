@@ -12,8 +12,8 @@
     <%= link_to buddy_path(buddy) do %>
       <div class="buddy-card">
         <div>
-        <img class="card-img" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY3MDUxMjkzMjI1OTIwMTcz/brad-pitt-attends-the-premiere-of-20th-century-foxs--square.jpg" alt="Buddy card">
-        <h5 class="price">€<%= buddy.price_hour %></h5>
+          <%= image_tag buddy.photo, class: 'card-img' %>
+          <h5 class="price">€<%= buddy.price_hour %></h5>
         </div>
         <div class="card-body">
           <h5 class="card-title"><%= buddy.name %></h5>
