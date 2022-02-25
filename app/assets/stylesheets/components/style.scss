@@ -1,4 +1,5 @@
 
+
 html, body {
   position: relative;
   background-color: white;
@@ -11,6 +12,83 @@ html, body {
   width: 80vw;
   height: 100vh;
   padding-top: 120px;
+  margin-bottom: 150px;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.site-container.pages {
+  background-color: $dark-blue;
+}
+
+.homepage-background {
+  margin-top: 100px;
+  margin-left: 200px;
+  display: block;
+  justify-content: space-evenly;
+}
+
+.images {
+  margin-left: 800px;
+  margin-top: -200px;
+  display: block;
+}
+.homepage-image {
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  transform: rotate(-2deg);
+  background-color: white;
+  border: 5px solid white;
+}
+
+.homepage-image-2 {
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  transform: rotate(10deg);
+  background-color: white;
+  border: 5px solid white;
+}
+
+.homepage-image-3 {
+  width: 550px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 50px;
+  padding-bottom: 100px;
+  transform: rotate(-5deg);
+  background-color: white;
+  border: 5px solid white;
+}
+
+.homepage-background h1 a{
+  color: $white;
+  font-size: 30px;
+}
+
+.main-header {
+  background-color: $orange;
+  box-sizing: border-box;
+  border-radius: 40px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  padding: 0 10px;
+  margin-top: 300px;
+  text-align: center;
+}
+
+.site-container-home {
+  background-color: #003354;
+}
+
+.site-container-body {
+  background-color: #003354;
   padding-bottom: 150px;
   overflow: auto;
 }

@@ -15,31 +15,41 @@
 
   <body>
       <div class="navbar-menu-application">
-        <div class="logo-and-menu logo-and-menu-app">
+        <div class="logo-and-menu-app">
           <h1  class="logo-font logo-font-app"><a href="/"> Rent a buddy </a> </h1>
+          <div class="buddy-search-app">
+            <form action="<%= buddies_path %>" class="location-text">
+              <input name="search" class="location-text" type="text" placeholder="Location or hobby">
+            </form>
+            <div>
+              <button class="search-button"><i class="search-icon fa fa-search"></i></button>
+            </div>
+          </div>
           <div class="right-side-menu">
             <p> Become a buddy <p>
             <div class="lang-circle">
-            <p>EN</p>
+              <p>EN</p>
             </div>
-            <div class="menu-and-profile-icon">
-              <div class="menu-line-box">
-                <div class="menu-line">
-                </div>
-                <div class="menu-line">
-                </div>
-                <div class="menu-line">
-                </div>
-              </div>
-              <div class="profile-icon">
-              </div>
+            <div>
+              <a href="/dashboard"></a>
+              <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" alt="dogo" class="profile-icon">
             </div>
           </div>
         </div>
       </div>
+
+
+      <% if action_name === "home" %>
+      <div class= site-container-body>
+      <div class="site-container-home">
+      <% else %>
       <div class="site-container">
+      <% end %>
         <%= yield %>
       </div>
+      </div>
+      </div>
+
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 

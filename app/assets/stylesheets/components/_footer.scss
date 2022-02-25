@@ -4,6 +4,7 @@
   height: 80px;
   background: $dark-blue;
   position: absolute;
+
 }
 
 .footer-content {
@@ -13,6 +14,11 @@
   align-items: center;
   height: 100%;
   margin: 0 30px
+}
+
+.footer-content.home {
+  background-color:#003354 ;
+
 }
 
 #footer p {

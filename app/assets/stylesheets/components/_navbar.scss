@@ -30,7 +30,6 @@ navbar ul {
   color: #ffffff;
   width: 100%;
   height: 250px;
-  position: fixed;
   right: 0;
   left: 0;
   top: 0;
@@ -41,11 +40,9 @@ navbar ul {
   color: #ffffff;
   width: 100%;
   height: 80px;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1;
+  justify-content: space-between;
+  display: inline-block;
+  top:0;
 }
 
 .right-side-menu {
@@ -70,13 +67,15 @@ navbar ul {
   margin-top: 3px;
 }
 
-.menu-and-profile-icon {
+.profile-icon {
   background-color: white;
-  height: 28px;
-  width: 46px;
-  border-radius: 35%;
-  display: flex
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  border: 2px solid $gray-blue;
 }
+
 
 .menu-line-box {
   margin-top: 5px;
@@ -89,14 +88,6 @@ navbar ul {
   margin-top: 2px;
 }
 
-.profile-icon {
-  background-color: #F26101;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  margin-left: 3px;
-  margin-top: 5px;
-}
 
 ul a{
   text-decoration: none;
@@ -111,15 +102,6 @@ ul a{
   width: 30%;
   padding: 0 0 15px 0;
   margin: 0 0 0 35%;
-}
-
-
-
-.logo-and-menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 30px;
 }
 
 .logo-and-menu-app{
@@ -137,30 +119,9 @@ height: 35px;
 display: inline-flex;
 justify-content: space-between;
 align-items: center;
-width: 20%;
-margin-left: 30%;
-margin-top: 20px;
-padding: 0 30px;
+width: 18%;
 box-shadow: 2px 2px #F26101;
-top: 0;
-z-index: 2;
-position: fixed;
-
-}
-
-.buddy-search {
-  background-color: white;
-  box-sizing: border-box;
-  border-radius: 50px;
-  height: 35px;
-  margin-top: 10px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-  margin-left: 40%;
-  padding: 0 30px;
-  box-shadow: 2px 2px #F26101;
+padding: 0 20px;
 }
 
 .search-icon {
@@ -170,7 +131,7 @@ position: fixed;
   height: 25px;
   text-align: center;
   background-color: #F26101;
-  text-shadow: 2px 2px #00000081;
+  text-shadow: 0px 1px $light-gray;
 }
 
 .logo-font {
@@ -217,3 +178,24 @@ input:focus {
 p{
   margin:0;
   }
+
+.search-button {
+  border: none;
+  background: none;
+  color: white;
+}
+
+.search-button:hover {
+  color: #003354;
+}
+
+search-icon {
+  font-size: 16px;
+  color: white;
+}
+
+.search-icon:hover {
+  color:#003354;
+  text-shadow: 0px 1px $darker_blue;
+  border: 2px solid $darker_blue;
+}
