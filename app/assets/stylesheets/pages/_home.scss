@@ -1,1 +1,99 @@
 // Specific CSS for your home-page
+
+.homepage-background {
+  position: relative;
+  top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 75px 10px;
+  margin-bottom: 10vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.home-button {
+  align-items: center;
+  position: center;
+}
+
+.homepage-container {
+  background-color: #003354;
+  height: 100vh;
+}
+
+
+h1.button-browse {
+  position: relative;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.images {
+  // margin-left: 800px;
+  // margin-top: -200px;
+  display: block;
+}
+
+.homepage-image-left {
+  width: 330px;
+  height: 250px;
+  border-radius: 20px;
+  transform: rotate(-2deg);
+  background-color: white;
+  border: 5px solid white;
+}
+
+.homepage-image-2 {
+  width: 330px;
+  height: 250px;
+  border-radius: 20px;
+  transform: rotate(10deg);
+  background-color: white;
+  border: 5px solid white;
+  background-size: contain;
+}
+
+.homepage-image-3 {
+  border-radius: 20px;
+  width: 330px;
+  height: 250px;
+  transform: rotate(-5deg);
+  background-color: white;
+  border: 5px solid white;
+}
+
+.homepage-image-4 {
+  width: 330px;
+  height: 250px;
+  border-radius: 20px;
+  transform: rotate(10deg);
+  position:relative;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.homepage-background h1{
+  color: $white;
+  font-size: 20px;
+  padding: auto;
+}
+
+.button-browse {
+  background-color: $orange;
+  box-sizing: border-box;
+  border-radius: 40px;
+  height: 60px;
+  font-size: 20px;
+  justify-content: center;
+  width: 200px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.home-button {
+position: relative;
+}
+
+.site-container-home {
+  background-color: #003354;
+}

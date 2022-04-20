@@ -14,59 +14,61 @@
   </head>
 
   <body>
-      <div class="navbar-menu-application">
-        <div class="logo-and-menu-app">
-          <h1  class="logo-font logo-font-app"><a href="/"> Rent a buddy </a> </h1>
-          <div class="buddy-search-app">
-            <form action="<%= buddies_path %>" class="location-text">
-              <input name="search" class="location-text" type="text" placeholder="Location or hobby">
-            </form>
-            <div>
-              <button class="search-button"><i class="search-icon fa fa-search"></i></button>
+    <div class="RAB-container">
+        <div class="navbar-menu-application">
+          <div class="logo-and-menu-app">
+            <h1  class="logo-font logo-font-app"><a href="/"> Rent a buddy </a> </h1>
+            <div class="buddy-search-app">
+              <form action="<%= buddies_path %>" class="location-text">
+                <input name="search" class="location-text" type="text" placeholder="Location or hobby">
+              </form>
+              <div>
+                <button class="search-button"><i class="search-icon fa fa-search"></i></button>
+              </div>
             </div>
-          </div>
-          <div class="right-side-menu">
-            <p> Become a buddy <p>
-            <div class="lang-circle">
-              <p>EN</p>
-            </div>
-            <div>
-              <a href="/dashboard"><img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" alt="dogo" class="profile-icon"></a>
+            <div class="right-side-menu">
+              <p> Become a buddy <p>
+              <div class="lang-circle">
+                <p>EN</p>
+              </div>
+              <div>
+                <a href="/dashboard"><img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" alt="dogo" class="profile-icon"></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
 
-      <% if action_name === "home" %>
-      <div class= site-container-body>
-      <div class="site-container-home">
-      <% else %>
-      <div class="site-container">
-      <% end %>
-        <%= yield %>
-      </div>
-      </div>
-      </div>
-
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
-      <div id="footer">
-        <div class="footer-content">
-          <div class="info">
-            <p>Contact us</p>
-            <p>About</p>
-          </div>
-          <div class="social-media">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-github"></i>
-          </div>
+        <% if action_name === "home" %>
+        <div class= site-container-body>
+        <div class="site-container-home">
+        <% else %>
+        <div class="site-container">
+        <% end %>
+          <%= yield %>
         </div>
+        </div>
+        </div>
+
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+
+        <%# <div id="footer">
+          <div class="footer-content">
+            <div class="info">
+              <p>Contact us</p>
+              <p>About</p>
+            </div>
+            <div class="social-media">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-github"></i>
+            </div>
+          </div>
+        </div> %>
       </div>
   </body>
 </html>
