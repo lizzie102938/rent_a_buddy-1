@@ -11,6 +11,11 @@
   margin-right: 10vh;
 }
 
+.home-button {
+  align-items: center;
+  position: center;
+}
+
 .homepage-container {
   background-color: #003354;
   height: 100vh;
@@ -20,6 +25,7 @@
 h1.button-browse {
   position: relative;
   margin: 0 auto;
+  align-items: center;
 }
 
 .images {
@@ -66,9 +72,10 @@ h1.button-browse {
   border: 5px solid white;
 }
 
-.homepage-background h1 a{
+.homepage-background h1{
   color: $white;
   font-size: 20px;
+  padding: auto;
 }
 
 .button-browse {
